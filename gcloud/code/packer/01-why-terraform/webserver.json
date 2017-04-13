@@ -1,0 +1,21 @@
+{
+  "builders": [{
+    "type": "googlecompute",
+    "project_id": "terraform-up-and-running-code",
+	"account_file": "/home/mjuenemann/.gcloud/credentials.json",
+    "source_image": "ubuntu-1610-yakkety-v20170330",
+    "image_name": "packer-example",
+	"machine_type": "n1-standard-1",
+    "zone": "asia-southeast1-a",
+    "ssh_username": "ubuntu"
+  }],
+  "provisioners": [{
+    "type": "shell",
+    "inline": [
+      "sudo apt-get update",
+      "sudo apt-get install -y php",
+      "sudo apt-get install -y apache2",
+      "sudo git clone https://github.com/brikis98/php-app.git /var/www/html/app"
+    ]
+  }]
+}

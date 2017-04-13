@@ -1,0 +1,3 @@
+[submodule "aws"]
+	path = aws
+	url = https://github.com/brikis98/terraform-up-and-running-code.git
