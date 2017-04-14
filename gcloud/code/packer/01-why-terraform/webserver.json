@@ -3,7 +3,7 @@
     "type": "googlecompute",
     "project_id": "terraform-up-and-running-code",
 	"account_file": "/home/mjuenemann/.gcloud/credentials.json",
-    "source_image": "ubuntu-1610-yakkety-v20170330",
+    "source_image_family": "ubuntu-1604-lts",
     "image_name": "packer-example",
 	"machine_type": "n1-standard-1",
     "zone": "asia-southeast1-a",
