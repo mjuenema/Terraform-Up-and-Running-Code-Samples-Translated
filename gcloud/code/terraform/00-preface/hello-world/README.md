@@ -23,7 +23,7 @@ Configure GOOGLE_CREDENTIALS environment variable. The variable must contain the
 *content* of the credentials file and not the path to it.
 
 ```
-export GOOGLE_CREDENTIALS="`cat ~/.gcloud/credentials.json`"
+export GOOGLE_CREDENTIALS="$(cat ~/.gcloud/credentials.json)"
 ```
 
 Validate the templates:
