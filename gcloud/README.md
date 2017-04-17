@@ -27,8 +27,8 @@ For instructions on running the code, please consult the README in each folder, 
   probably "terraform-up-and-running-code". 
 * Download the *Authentication JSON File* as described on Terraform's
   [Google Cloud Provider](https://www.terraform.io/docs/providers/google/index.html)
-  page and save it as `~/.gcloud/credentials.json`. Secure the credentials file
-  by running `chmod 0600 ~/.gcloud/credentials.json`.
+  page and save it as `~/.gcloud//terraform-up-and-running-code.json`. Secure the credentials file
+  by running `chmod 0600 ~/.gcloud//terraform-up-and-running-code.json`.
 * Check the [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/regions-zones)
   page and identify the region name closest to you  from the *Available regions & zones*
   table. Before running any code samples, set the `GOOGLE_REGION` to region name you
