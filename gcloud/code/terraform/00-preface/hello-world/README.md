@@ -1,7 +1,7 @@
 # Terraform "Hello, World" example
 
 This folder contains a "Hello, World" example of a [Terraform](https://www.terraform.io/) template. The template 
-deploys a single server in an [Google Cloud Platform]((https://cloud.google.com) account.
+deploys a single server in an [Google Cloud Platform](https://cloud.google.com) account.
 
 For more info, please see the preface of *[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
