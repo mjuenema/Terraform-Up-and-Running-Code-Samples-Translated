@@ -39,6 +39,7 @@ resource "google_compute_forwarding_rule" "example" {
 
 resource "google_compute_target_pool" "example" {
   name = "example-target-pool"
+  health_checks = ["${google_compute_http_health_check.example.name}"]
 }
 
 resource "google_compute_instance_group_manager" "example" {
@@ -56,7 +57,7 @@ resource "google_compute_autoscaler" "example" {
   target = "${google_compute_instance_group_manager.example.self_link}"
 
   autoscaling_policy = {
-    max_replicas    = 10
+    max_replicas    = 8
     min_replicas    = 2
     cooldown_period = 60
 
