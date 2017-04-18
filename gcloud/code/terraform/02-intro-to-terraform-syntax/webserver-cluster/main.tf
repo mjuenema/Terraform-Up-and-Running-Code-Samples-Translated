@@ -22,9 +22,9 @@ resource "google_compute_instance_template" "example" {
 
   network_interface {
     network = "default"
-    access_config {
-      // Ephemeral IP
-    }
+    #access_config {
+    #  // Ephemeral IP
+    #}
   }
 
   metadata_startup_script = "echo 'Hello, World' > index.html ; nohup busybox httpd -f -p ${var.server_port} &"
