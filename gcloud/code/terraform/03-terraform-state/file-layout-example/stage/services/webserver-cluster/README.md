@@ -43,6 +43,7 @@ Validate the templates:
 terraform plan
 ```
 
+Apply the code:
 
 ```
 terraform apply
