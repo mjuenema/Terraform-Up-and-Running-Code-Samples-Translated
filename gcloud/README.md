@@ -18,7 +18,8 @@ For instructions on running the code, please consult the README in each folder, 
 
 **IMPORTANT**
 
-* All examples have been testes with Terraform 0.9.x.
+* All examples have been tested with Terraform 0.9.x. Code samples have been updated
+  where neccessary.
 * Understand the [pricing](https://cloud.google.com/pricing/)
   and [free trial](https://cloud.google.com/free/) pages before running any code examples.
 * Google Cloud Platform groups resources into projects. Navigate to the
