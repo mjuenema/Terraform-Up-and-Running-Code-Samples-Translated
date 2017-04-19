@@ -17,7 +17,7 @@ For more info, please see Chapter 3, "How to Manage Terraform State", of
 * You must have [Terraform](https://www.terraform.io/) installed on your computer.
 * You must have an [Google Cloud Platform](https://cloud.google.com/) account.
 * You must have downloaded a Google Cloud Platform credentials file.
-* You must have enabled the Google Compute Engine API (CORRECT?)
+* You must have enabled the Google Compute Engine API.
 * You must deploy the MySQL database in [data-stores/mysql](../../data-stores/mysql) BEFORE deploying the
   templates in this folder.
 
