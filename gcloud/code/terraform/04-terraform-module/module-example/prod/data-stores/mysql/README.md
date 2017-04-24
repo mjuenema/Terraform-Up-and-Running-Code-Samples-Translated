@@ -3,7 +3,7 @@
 This folder contains example [Terraform](https://www.terraform.io/) templates that deploy a MySQL database
 in a [Google Cloud Platform](https://cloud.google.com) account.
 
-For more info, please see Chapter 3, "How to Manage Terraform State", of 
+For more info, please see Chapter 4, "How to Create Reusable Infrastructure with Terraform Modules", of 
 *[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
 ## Pre-requisites
@@ -37,7 +37,7 @@ in `main.tf`.
 
 ```
 terraform init -backend-config="bucket=(YOUR_BUCKET_NAME)"  \
-               -backend-config="path=stage/data-stores/mysql/terraform.tfstate"
+               -backend-config="path=prod/data-stores/mysql/terraform.tfstate"
 ```
 
 Validate the templates:

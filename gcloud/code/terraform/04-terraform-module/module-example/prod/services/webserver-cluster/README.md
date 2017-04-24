@@ -1,9 +1,15 @@
-# Web Server Example
+# Web server cluster example (staging environment)
 
-This folder contains example [Terraform](https://www.terraform.io/) templates that deploy a MySQL database
+This folder contains example [Terraform](https://www.terraform.io/) templates that deploy a cluster of web servers 
+(using [Google Compute Engine](https://cloud.google.com/compute/) and
+[Auto Scaling](https://cloud.google.com/compute/docs/autoscaler/)
+and a load balancer
+(using [Google Cloud Load Balancing](https://cloud.google.com/load-balancing/))
 in a [Google Cloud Platform](https://cloud.google.com) account.
+The load balancer listens on port 80 and returns the text "Hello, World" for the 
+`/` URL.
 
-For more info, please see Chapter 3, "How to Manage Terraform State", of 
+For more info, please see Chapter 4, "How to Create Reusable Infrastructure with Terraform Modules", of 
 *[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
 ## Pre-requisites
@@ -11,12 +17,11 @@ For more info, please see Chapter 3, "How to Manage Terraform State", of
 * You must have [Terraform](https://www.terraform.io/) installed on your computer.
 * You must have an [Google Cloud Platform](https://cloud.google.com/) account.
 * You must have downloaded a Google Cloud Platform credentials file.
-* You must have enabled the [Google Cloud SQL API](https://console.developers.google.com/apis/api/sqladmin.googleapis.com/overview) 
-  for your project.
+* You must have enabled the Google Compute Engine API.
+* You must deploy the MySQL database in [data-stores/mysql](../../data-stores/mysql) BEFORE deploying the
+  templates in this folder.
 
-Please note that this code was written for Terraform 0.9.x. The `remote config` command
-has been removed in [version 0.9.0](https://github.com/hashicorp/terraform/pull/11286).
-
+Please note that this code was written for Terraform 0.9.x.
 
 ## Quick start
 
@@ -32,12 +37,10 @@ Configure GOOGLE_CREDENTIALS environment variable. The variable must contain the
 export GOOGLE_CREDENTIALS="$(cat ~/.gcloud/terraform-up-and-running-code-samples.json)"
 ```
 
-Configure remote state storage using a Google Cloud Storage bucket as configured
-in `main.tf`.
+Integrate the module
 
 ```
-terraform init -backend-config="bucket=(YOUR_BUCKET_NAME)"  \
-               -backend-config="path=stage/data-stores/mysql/terraform.tfstate"
+terraform get
 ```
 
 Validate the templates:
@@ -46,8 +49,7 @@ Validate the templates:
 terraform plan
 ```
 
-Deploy the code
-
+Apply the code:
 
 ```
 terraform apply
