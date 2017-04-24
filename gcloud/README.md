@@ -30,17 +30,10 @@ For instructions on running the code, please consult the README in each folder, 
   [Google Cloud Provider](https://www.terraform.io/docs/providers/google/index.html)
   page and save it as `~/.gcloud//terraform-up-and-running-code.json`. Secure the credentials file
   by running `chmod 0600 ~/.gcloud//terraform-up-and-running-code.json`.
-* Check the [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/regions-zones)
-  page and identify the region name closest to you  from the *Available regions & zones*
-  table. Before running any code samples, set the `GOOGLE_REGION` to region name you
-  chose, e.g. `export GOOGLE_REGION=us-east1`. If you skip this step all resources
-  will be in the `asia-southeast1` region because Singapore is closest to my location
-  in Australia (until Google opens the data-centre in Sydney).
 * Enable the Google Compute Engine API by visiting the 
   [Google Developer Console](https://console.developers.google.com/apis/dashboard).
   Select the "Terraform Up and Running Code" project and click on *Enable API*.
   Next select *Google Compute Engine API* and click *Enabling*.
-
 
 ## License
 
