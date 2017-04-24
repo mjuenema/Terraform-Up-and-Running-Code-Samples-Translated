@@ -5,7 +5,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "example" {
-  name = "example"
+  name = "terraform-example"
   machine_type  = "f1-micro"
   zone = "us-central1-a"
   disk {
@@ -18,4 +18,5 @@ resource "google_compute_instance" "example" {
       // Ephemeral IP
     }
   }
+  tags = ["terraform-example"]
 }

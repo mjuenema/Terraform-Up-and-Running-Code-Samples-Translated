@@ -26,7 +26,7 @@ We are not responsible for any charges you may incur.**
 To build the Google Compute Engine image:
 
 ```
-packer validate webserver.json
+vi webserver.json   # correct the "account_file" path.
 packer build webserver.json
 ```
 

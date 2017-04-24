@@ -1,16 +1,19 @@
-# Terraform "Hello, World" example
+# Server Example
 
-This folder contains a "Hello, World" example of a [Terraform](https://www.terraform.io/) template. The template 
-deploys a single server in a [Google Cloud Platform](https://cloud.google.com) account.
+This folder contains an example [Terraform](https://www.terraform.io/) template that deploys a single server (using 
+[Google Compute Engine](https://cloud.google.com/compute/) in a [Google Cloud Platform](https://cloud.google.com) account.
 
-For more info, please see the preface of *[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
+For more info, please see Chapter 2, "Getting started with Terraform", of 
+*[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
 ## Pre-requisites
 
+* You must have [Terraform](https://www.terraform.io/) installed on your computer. 
 * You must have an [Google Cloud Platform](https://cloud.google.com/) account.
 * You must have downloaded a Google Cloud Platform credentials file.
 * You must have enabled the Google Compute Engine API (CORRECT?)
 
+Please note that this code was written for Terraform 0.9.x.
 
 ## Quick start
 
@@ -23,7 +26,7 @@ Configure GOOGLE_CREDENTIALS environment variable. The variable must contain the
 *content* of the credentials file and not the path to it.
 
 ```
-export GOOGLE_CREDENTIALS="$(cat ~/.gcloud/terraform-up-and-running-code.json)"
+export GOOGLE_CREDENTIALS="$(cat ~/.gcloud/terraform-up-and-running-code-samples.json)"
 ```
 
 Validate the templates:
@@ -38,9 +41,14 @@ Deploy the code:
 terraform apply
 ```
 
+Show the details.
+
+```
+terraform show
+```
+
 Clean up when you're done:
 
 ```
 terraform destroy
 ```
-
