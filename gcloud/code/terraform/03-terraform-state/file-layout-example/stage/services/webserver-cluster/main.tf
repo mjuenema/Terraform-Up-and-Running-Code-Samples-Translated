@@ -5,7 +5,7 @@
 provider "google" {
   project     = "terraform-up-and-running-code"
   # credentials = GOOGLE_CREDENTIALS
-  region = "asia-southeast1"
+  region = "us-central1"
 }
 
 
@@ -70,7 +70,7 @@ resource "google_compute_target_pool" "example" {
 
 resource "google_compute_instance_group_manager" "example" {
   name = "example-group-manager"
-  zone = "asia-southeast1-a"
+  zone = "us-central1-a"
 
   instance_template  = "${google_compute_instance_template.example.self_link}"
   target_pools       = ["${google_compute_target_pool.example.self_link}"]
@@ -80,7 +80,7 @@ resource "google_compute_instance_group_manager" "example" {
 
 resource "google_compute_autoscaler" "example" {
   name = "example-autoscaler"
-  zone = "asia-southeast1-a"
+  zone = "us-central1-a"
   target = "${google_compute_instance_group_manager.example.self_link}"
 
   autoscaling_policy = {
