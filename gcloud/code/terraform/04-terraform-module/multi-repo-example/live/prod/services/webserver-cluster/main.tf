@@ -5,7 +5,7 @@ provider "google" {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "git@github.com:mjuenema/terraform-up-and-running-code.git//code/terraform/04-terraform-module/module-example/modules/services/webserver-cluster"
 
   cluster_name           = "webservers-stage"
   db_remote_state_bucket = "${var.db_remote_state_bucket}"
