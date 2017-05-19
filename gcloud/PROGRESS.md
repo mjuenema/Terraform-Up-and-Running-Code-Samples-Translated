@@ -50,7 +50,7 @@
 * ~~04-terraform-module/module-example/modules/services/webserver-cluster/vars.tf~~
 * ~~04-terraform-module/module-example/prod/data-stores/mysql/main.tf~~
 * ~~04-terraform-module/module-example/prod/data-stores/mysql/outputs.tf~~
-* ~~04-terraform-module/module-example/prod/data-stores/mysql/README.md~~
+* **04-terraform-module/module-example/prod/data-stores/mysql/README.md (needs fixing as it wrongly refers to the staging environment)**
 * ~~04-terraform-module/module-example/prod/data-stores/mysql/vars.tf~~
 * ~~04-terraform-module/module-example/prod/services/webserver-cluster/main.tf~~
 * ~~04-terraform-module/module-example/prod/services/webserver-cluster/outputs.tf~~
@@ -64,14 +64,14 @@
 * ~~04-terraform-module/module-example/stage/services/webserver-cluster/outputs.tf~~
 * ~~04-terraform-module/module-example/stage/services/webserver-cluster/README.md~~
 * ~~04-terraform-module/module-example/stage/services/webserver-cluster/vars.tf~~
-* 04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/main.tf
-* 04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/outputs.tf
-* 04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/README.md
-* 04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/vars.tf
+* ~~04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/main.tf~~
+* ~~04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/outputs.tf~~
+* ~~04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/README.md~~
+* ~~04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/vars.tf~~
 * 04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/main.tf
-* 04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/outputs.tf
+* ~~04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/outputs.tf~~
 * 04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/README.md
-* 04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/vars.tf
+* ~~04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/vars.tf~~
 * 04-terraform-module/multi-repo-example/live/stage/data-stores/mysql/main.tf
 * 04-terraform-module/multi-repo-example/live/stage/data-stores/mysql/outputs.tf
 * 04-terraform-module/multi-repo-example/live/stage/data-stores/mysql/README.md
