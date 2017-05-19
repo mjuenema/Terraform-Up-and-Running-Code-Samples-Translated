@@ -5,7 +5,7 @@
 * ~~00-preface/hello-world/main.tf~~
 * ~~00-preface/hello-world/README.md~~
 
-## Getting Started with Terraform
+## 2. Getting Started with Terraform
 
 * ~~02-intro-to-terraform-syntax/one-server/main.tf~~
 * ~~02-intro-to-terraform-syntax/one-server/README.md~~
@@ -22,7 +22,7 @@
 * ~~02-intro-to-terraform-syntax/webserver-cluster/README.md~~
 * ~~02-intro-to-terraform-syntax/webserver-cluster/vars.tf~~
 
-## How to Managa Terraform State
+## 3. How to Managa Terraform State
 
 * 03-terraform-state/file-layout-example/global/s3/main.tf
 * 03-terraform-state/file-layout-example/global/s3/outputs.tf
@@ -46,7 +46,7 @@
 * ~~03-terraform-state/file-layout-example/stage/services/webserver-cluster/user-data.sh~~
 * ~~03-terraform-state/file-layout-example/stage/services/webserver-cluster/vars.tf~~
 
-## How to Create Reusable Infrastructure
+## 4. How to Create Reusable Infrastructure
 
 ### Module example
 
@@ -98,7 +98,7 @@
 * ~~04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/README.md~~
 * ~~04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/vars.tf~~
 
-## Terraform Tips and Tricks
+## 5. Terraform Tips and Tricks
 
 * 05-tips-and-tricks/loops-and-if-statements/live/global/existing-iam-user/main.tf
 * 05-tips-and-tricks/loops-and-if-statements/live/global/existing-iam-user/README.md
@@ -157,7 +157,7 @@
 * 05-tips-and-tricks/zero-downtime-deployment/modules/services/webserver-cluster/user-data.sh
 * 05-tips-and-tricks/zero-downtime-deployment/modules/services/webserver-cluster/vars.tf
 
-## How to Use Terraform as a Team
+## 6. How to Use Terraform as a Team
 
 * 06-terraform-team/live/prod/data-stores/mysql/main.tf
 * 06-terraform-team/live/prod/data-stores/mysql/outputs.tf
