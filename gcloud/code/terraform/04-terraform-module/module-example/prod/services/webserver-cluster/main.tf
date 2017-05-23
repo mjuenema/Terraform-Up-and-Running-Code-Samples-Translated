@@ -8,7 +8,7 @@ module "webserver_cluster" {
   source = "../../../modules/services/webserver-cluster"
 
   cluster_name           = "webservers-prod"
-  db_remote_state_bucket = "state_bucket"
+  db_remote_state_bucket = "net-juenemann-tfstate"
   db_remote_state_path   = "prod/data-stores/mysql/terraform.tfstate"
 
   instance_type = "f1-micro"
