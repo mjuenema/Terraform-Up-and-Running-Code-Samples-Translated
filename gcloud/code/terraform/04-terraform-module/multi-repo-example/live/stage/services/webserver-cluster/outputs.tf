@@ -1,3 +1,3 @@
-output "elb_dns_name" {
-  value = "${module.webserver_cluster.elb_dns_name}"
+output "public_ip" {
+  value = "${module.webserver_cluster.public_ip}"
 }

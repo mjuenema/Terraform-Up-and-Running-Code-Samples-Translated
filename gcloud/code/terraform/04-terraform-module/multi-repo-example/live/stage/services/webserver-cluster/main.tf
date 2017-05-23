@@ -1,29 +1,30 @@
-terraform {
-  required_version = ">= 0.8, < 0.9"
-}
-
-provider "aws" {
-  region = "us-east-1"
+provider "google" {
+  project     = "terraform-up-and-running-code"
+  # credentials = GOOGLE_CREDENTIALS
+  region = "us-central1"
 }
 
 module "webserver_cluster" {
-  source = "git@github.com:brikis98/terraform-up-and-running-code.git//code/terraform/04-terraform-module/module-example/modules/services/webserver-cluster?ref=v0.0.2"
+  source = "git@github.com:mjuenema/terraform-up-and-running-code-samples-translated.git//gcloud/code/terraform/04-terraform-module/module-example/modules/services/webserver-cluster?ref=v0.0.1"
 
   cluster_name           = "webservers-stage"
-  db_remote_state_bucket = "${var.db_remote_state_bucket}"
-  db_remote_state_key    = "${var.db_remote_state_key}"
+  db_remote_state_bucket = "state_bucket"
+  db_remote_state_path   = "stage/data-stores/mysql/terraform.tfstate"
 
-  instance_type = "t2.micro"
+  instance_type = "f1-micro"
   min_size      = 2
   max_size      = 2
 }
 
-resource "aws_security_group_rule" "allow_testing_inbound" {
-  type              = "ingress"
-  security_group_id = "${module.webserver_cluster.elb_security_group_id}"
 
-  from_port   = 12345
-  to_port     = 12345
-  protocol    = "tcp"
-  cidr_blocks = ["0.0.0.0/0"]
+resource "google_compute_firewall" "allow_inbound_testing" {
+  name    = "allow-inbound-testing"
+  network = "default"
+
+  source_ranges = ["0.0.0.0/0"]
+
+  allow {
+    protocol = "tcp"
+    ports    = [12346]
+  }
 }

@@ -9,7 +9,8 @@ in a [Google Cloud Platform](https://cloud.google.com) account.
 The load balancer listens on port 80 and returns the text "Hello, World" for the 
 `/` URL.
 The code for the cluster and load balancer are defined as a Terraform module in
-[modules/services/webserver-cluster](../../../modules/services/webserver-cluster).
+[modules/services/webserver-cluster](../../../modules/services/webserver-cluster)
+and pulled in via a versioned Git URL.
 
 
 For more info, please see Chapter 4, "How to Create Reusable Infrastructure with Terraform Modules", of 
@@ -63,3 +64,10 @@ Clean up when you're done:
 ```
 terraform destroy
 ```
+
+## Notes
+
+There seems to be an inconsistency between the book and the AWS example code in
+Github. In the book the `db_remote_state_bucket` and `db_remote_state_key` arguments
+are hard-coded while the code in Github uses variables instead. As a compromise
+the Google Cloud example here uses variables with default values.

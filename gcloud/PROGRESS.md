@@ -61,7 +61,7 @@
 * ~~04-terraform-module/module-example/prod/data-stores/mysql/README.md~~
 * ~~04-terraform-module/module-example/prod/data-stores/mysql/vars.tf~~
 
-* 04-terraform-module/module-example/prod/services/webserver-cluster/main.tf (auto-scaling is missing)
+* ~~04-terraform-module/module-example/prod/services/webserver-cluster/main.tf~~
 * ~~04-terraform-module/module-example/prod/services/webserver-cluster/outputs.tf~~
 * ~~04-terraform-module/module-example/prod/services/webserver-cluster/README.md~~
 * ~~04-terraform-module/module-example/prod/services/webserver-cluster/vars.tf~~
@@ -71,7 +71,7 @@
 * ~~04-terraform-module/module-example/stage/data-stores/mysql/README.md~~
 * ~~04-terraform-module/module-example/stage/data-stores/mysql/vars.tf~~
 
-* 04-terraform-module/module-example/stage/services/webserver-cluster/main.tf (auto-scaling is missing)
+* ~~04-terraform-module/module-example/stage/services/webserver-cluster/main.tf~~
 * ~~04-terraform-module/module-example/stage/services/webserver-cluster/outputs.tf~~
 * ~~04-terraform-module/module-example/stage/services/webserver-cluster/README.md~~
 * ~~04-terraform-module/module-example/stage/services/webserver-cluster/vars.tf~~
@@ -83,7 +83,7 @@
 * ~~04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/README.md~~
 * ~~04-terraform-module/multi-repo-example/live/prod/data-stores/mysql/vars.tf~~
 
-* 04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/main.tf (auto-scaling is missing)
+* ~~04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/main.tf~~
 * ~~04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/outputs.tf~~
 * ~~04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/README.md~~
 * ~~04-terraform-module/multi-repo-example/live/prod/services/webserver-cluster/vars.tf~~
@@ -93,7 +93,7 @@
 * ~~04-terraform-module/multi-repo-example/live/stage/data-stores/mysql/README.md~~
 * ~~04-terraform-module/multi-repo-example/live/stage/data-stores/mysql/vars.tf~~
 
-* 04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/main.tf  (auto-scaling is missing)
+* ~~04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/main.tf~~
 * ~~04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/outputs.tf~~
 * ~~04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/README.md~~
 * ~~04-terraform-module/multi-repo-example/live/stage/services/webserver-cluster/vars.tf~~
