@@ -1,5 +1,4 @@
-'Terraform: Up & Running' code samples translated
-=================================================
+# 'Terraform: Up & Running' code samples translated
 
 The Github repository
 [terraform-up-and-running-code](https://github.com/brikis98/terraform-up-and-running-code)
@@ -14,9 +13,11 @@ Yevgeniy Brikman's book to other providers.
 * The `aws/` folder contains the [terraform-up-and-running-code](https://github.com/brikis98/terraform-up-and-running-code)
   repository as a Git submodule for convenience.
 
-The directory layouts mirrors the layout of the [terraform-up-and-running-code](https://github.com/brikis98/terraform-up-and-running-code)
+The directory layouts aims to mirror the layout of the [terraform-up-and-running-code](https://github.com/brikis98/terraform-up-and-running-code)
 repository. All code samples have been translated to represent the original functionality
 as closely as possible. Any differences are noted in README files. Code samples that don't
 require any translation have been symlinked.
 
-Markus Juenemann, 24-April-2017
+*This project is work in progress*
+
+Markus Juenemann, 25-May-2017
