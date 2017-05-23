@@ -63,3 +63,10 @@ Clean up when you're done:
 ```
 terraform destroy
 ```
+
+## Notes
+
+There seems to be an inconsistency between the book and the AWS example code in
+Github. In the book the `db_remote_state_bucket` and `db_remote_state_key` arguments
+are hard-coded while the code in Github uses variables instead. As a compromise
+the Google Cloud example here uses variables with default values.

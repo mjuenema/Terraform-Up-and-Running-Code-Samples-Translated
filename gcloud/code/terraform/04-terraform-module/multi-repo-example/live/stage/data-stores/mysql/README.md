@@ -33,10 +33,10 @@ export GOOGLE_CREDENTIALS="$(cat ~/.gcloud/terraform-up-and-running-code-samples
 ```
 
 Configure remote state storage using a Google Cloud Storage bucket as configured
-in `main.tf`.
+in `main.tf`. The bucket must alreday exist.
 
 ```
-terraform init -backend-config="bucket=(YOUR_BUCKET_NAME)"  \
+terraform init -backend-config="bucket=state_bucket"  \
                -backend-config="path=stage/data-stores/mysql/terraform.tfstate"
 ```
 
