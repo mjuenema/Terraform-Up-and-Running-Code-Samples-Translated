@@ -24,16 +24,10 @@
 
 ## 3. How to Managa Terraform State
 
-* 03-terraform-state/file-layout-example/global/s3/main.tf
-* 03-terraform-state/file-layout-example/global/s3/outputs.tf
-* 03-terraform-state/file-layout-example/global/s3/README.md
-* 03-terraform-state/file-layout-example/global/s3/vars.tf
-
-* 03-terraform-state/file-layout-example/global/storage/main.tf
-* 03-terraform-state/file-layout-example/global/storage/outputs.tf
-* 03-terraform-state/file-layout-example/global/storage/README.md
-* 03-terraform-state/file-layout-example/global/storage/terraform.tfvars
-* 03-terraform-state/file-layout-example/global/storage/vars.tf
+* ~~03-terraform-state/file-layout-example/global/s3/main.tf~~
+* ~~03-terraform-state/file-layout-example/global/s3/outputs.tf~~
+* ~~03-terraform-state/file-layout-example/global/s3/README.md~~
+* ~~03-terraform-state/file-layout-example/global/s3/vars.tf~~
 
 * ~~03-terraform-state/file-layout-example/stage/data-stores/mysql/main.tf~~
 * ~~03-terraform-state/file-layout-example/stage/data-stores/mysql/outputs.tf~~
