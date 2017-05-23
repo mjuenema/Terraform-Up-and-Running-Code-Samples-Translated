@@ -1,9 +1,9 @@
-# Web Server Example
+# Web Server Example (Production)
 
 This folder contains example [Terraform](https://www.terraform.io/) templates that deploy a MySQL database
 in a [Google Cloud Platform](https://cloud.google.com) account.
 
-For more info, please see Chapter 3, "How to Manage Terraform State", of 
+For more info, please see Chapter 4, "How to Create Reusable Infrastructure with Terraform Modules", of 
 *[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
 ## Pre-requisites
@@ -33,11 +33,11 @@ export GOOGLE_CREDENTIALS="$(cat ~/.gcloud/terraform-up-and-running-code-samples
 ```
 
 Configure remote state storage using a Google Cloud Storage bucket as configured
-in `main.tf`.
+in `main.tf`. The bucket must already exist!
 
 ```
-terraform init -backend-config="bucket=(YOUR_BUCKET_NAME)"  \
-               -backend-config="path=stage/data-stores/mysql/terraform.tfstate"
+terraform init -backend-config="bucket=state_bucket"  \
+               -backend-config="path=prod/data-stores/mysql/terraform.tfstate"
 ```
 
 Validate the templates:
